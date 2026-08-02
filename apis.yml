@@ -1,8 +1,26 @@
 aid: torch-dental
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/torch-dental.png
 name: Torch Dental
-description: 'Torch Dental is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: vertical-software. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Torch Dental is a New York-based vertical-software company that builds a procurement
+  and practice-management platform for dental practices and dental service organizations (DSOs).
+  The platform lets dental offices order supplies across multiple vendors from a single catalog,
+  compare prices, manage budgets and approvals, track orders and invoices, and streamline
+  back-office purchasing. Torch Dental is backed by Bessemer Venture Partners and was surfaced
+  through that portfolio and added to the API Evangelist network for enrichment. As of this pass
+  the company exposes no public developer API, developer portal, documentation, or SDKs; its
+  web presence sits behind a bot-challenge wall and there is no reachable api./developers./docs.
+  subdomain, so this profile captures identity and domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/torch-dental/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Vertical Software
+- Dental
+- Healthcare
+- Procurement
+- Practice Management
+- Supply Chain
+- B2B SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/torch-dental-domain-security.yml
 - type: Website
   url: https://www.torchdental.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
